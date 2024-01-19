@@ -1,0 +1,51 @@
+.contact {
+  grid-template-columns: repeat(2, 2fr);
+  column-gap: 20rem;
+  align-items: center;
+}
+
+.contact__decription {
+  font-size: var(--font-size-24);
+  line-height: 1.9;
+}
+
+.contact__email {
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+
+.contact__socail {
+  transition: var(--transition);
+}
+
+.contact__socail:hover {
+  transform: scale(1.2);
+}
+
+.contact__inputs {
+  display: flex;
+  gap: 3rem;
+}
+
+.contact__input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 0.2rem solid #717171;
+}
+
+.contact__textarea {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.contact__button {
+  background-color: #000000;
+  color: var(--color-white);
+  padding: 1.6rem 1.8rem;
+  font-weight: var(--font-weight-medum);
+  font-size: var(--font-size-24);
+  margin-top: 2.4rem;
+  border: 0;
+}

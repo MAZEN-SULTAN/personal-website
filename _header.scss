@@ -1,0 +1,99 @@
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigtion__link:link,
+.navigtion__link:visited {
+  text-decoration: none;
+  font-weight: var(--font-weight-medum);
+}
+
+.navigtion__link:hover,
+.navigtion__link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+
+.container:has(.bio:target) .navigtion__bio {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-weight: var(--font-weight-simi-bold);
+}
+.container:has(.skills:target) .navigtion__skills {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-weight: var(--font-weight-simi-bold);
+}
+.container:has(.media:target) .navigtion__media {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-weight: var(--font-weight-simi-bold);
+}
+.container:has(.projects:target) .navigtion__projects {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-weight: var(--font-weight-simi-bold);
+}
+.container:has(.clients:target) .navigtion__clients {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-weight: var(--font-weight-simi-bold);
+}
+.container:has(.contact:target) .navigtion__contact {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-weight: var(--font-weight-simi-bold);
+}
+
+.burger__menu {
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.toggle__title {
+  font-weight: var(--font-weight-medum);
+  font-size: var(--font-size-18);
+}
+
+.toggle__checkbox {
+  display: none;
+}
+
+.toggle__label {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  width: 4.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.3px 0.4px;
+}
+
+.toggle__label::after {
+  content: "";
+  width: 1.6rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--color-white);
+  transition: all 0.3s ease 0s;
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+
+.toggle__checkbox:checked + .toggle__label::after {
+  transform: translateX(2rem);
+  background-color: var(--color-green);
+}
